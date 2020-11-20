@@ -1,0 +1,489 @@
+@import url("https://fonts.googleapis.com/css2?family=Adamina&family=Turret+Road:wght@800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --grey: #696969;
+  --blue: blue;
+  --cyan: cyan;
+  --lightgrey: #d3d3d3;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 55px 1fr 100px;
+  grid-template-columns: 1fr 25fr 1fr;
+  background-color: var(--lightgrey);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  background-color: var(--grey);
+  color: var(--grey);
+  padding: 10px;
+}
+
+.mainindex h1 {
+  display: flex;
+  font-size: 30px;
+  font-family: "Turret Road", cursive;
+  color: blue;
+  justify-content: center;
+}
+
+.indextitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.indextitle img {
+  height: 30px;
+}
+
+nav {
+  display: flex;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+nav a {
+  font-family: "Turret Road", serif;
+}
+
+.Logga {
+  padding: 0px;
+}
+
+.About {
+  background-color: var(--grey);
+  color: var(--blue);
+  padding: 10px;
+}
+
+header a:hover {
+  text-decoration: underline white;
+  transition: 100ms ease-in-out;
+}
+
+.News {
+  background-color: var(--grey);
+  color: var(--blue);
+  padding: 10px;
+}
+
+.Merch {
+  background-color: var(--grey);
+  color: var(--blue);
+  padding: 10px;
+}
+
+.Games {
+  background-color: var(--grey);
+  color: var(--blue);
+  padding: 10px;
+}
+
+.mainindex {
+  display: grid;
+  display: flex;
+  grid-row-start: 2;
+  grid-row-end: -3;
+  grid-column-start: -3;
+  grid-column-end: 2;
+  flex-direction: column;
+}
+
+.mainindex p {
+  font-size: 16px;
+  font-family: "Adamina", serif;
+  margin: 50px;
+}
+
+.amonguspic {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.test img {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.test {
+  background-image: url("Amongus.jpg");
+  background-size: 100%;
+  height: 500px;
+}
+
+.amongustext {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.test:hover .amongustext {
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  font-family: "Turret Road", serif;
+  color: var(--blue);
+  font-size: 30px;
+  transition: ease-in-out 500ms;
+}
+
+.header a:hover {
+  border-color: white;
+}
+
+.othergames img {
+  width: 500px;
+  height: 100%;
+}
+
+.othergames {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.newsletter {
+  display: flex;
+  align-items: center;
+}
+
+.newsletter input {
+  height: 25px;
+  margin: 10px;
+}
+
+.newsletter a {
+  border: var(--blue);
+  background-color: black;
+  color: white;
+  padding: 6px;
+  margin: 5px;
+}
+
+.indexnews {
+  display: flex;
+  background-color: var(--grey);
+  border-style: solid;
+  font-family: "Turret Road", cursive;
+  align-items: center;
+  padding: 0px;
+  height: 50%;
+  align-self: center;
+}
+
+.notamongus {
+  display: flex;
+}
+
+.notamongus p {
+  border-style: solid;
+  border-color: var(--cyan);
+}
+
+footer {
+  display: grid;
+  grid-row-start: -2;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  background-color: var(--grey);
+  color: var(--blue);
+  justify-content: center;
+}
+
+.footernav {
+  display: flex;
+  justify-content: center;
+}
+
+.maingames {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.maingames p {
+  font-family: "Adamina", serif;
+  font-size: 16px;
+  border-style: solid;
+  border-color: var(--blue);
+  background-color: var(--grey);
+  justify-content: flex-end;
+}
+
+.maingames img {
+  width: 300px;
+}
+
+.maingames p {
+  width: 500px;
+}
+
+.amongusgames {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+.dig2chinagames {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+}
+
+.henrycollectiongames {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+}
+
+.maingames a {
+  width: 100px;
+}
+
+.maingames h1 {
+  font-family: "Turret Road", serif;
+}
+
+.download a,
+.download img {
+  display: flex;
+}
+
+.mainnews {
+  display: grid;
+  display: flex;
+  grid-row-start: 2;
+  grid-row-end: -3;
+  grid-column-start: -3;
+  grid-column-end: 2;
+  flex-direction: column;
+}
+
+.mainnews h1 {
+  font-family: "Turret Road", serif;
+  font-size: 30px;
+}
+
+.newstitle h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.newstable {
+  grid-column-start: 3;
+  grid-column-end: span 2;
+  font-family: "Adamina", serif;
+  font-size: 16px;
+  border-style: solid;
+  background-color: var(--grey);
+  margin: 50px;
+}
+
+table td,
+table th {
+  border: solid;
+}
+
+table td {
+  width: 1000%;
+}
+
+table a,
+table p {
+  color: var(--cyan);
+}
+
+table h2 {
+  color: white;
+}
+
+.categoryarea {
+  position: fixed;
+  top: 30px;
+  left: 10px;
+  font-size: 100px;
+}
+
+.categories {
+  position: fixed;
+  background-color: var(--grey);
+  border-style: solid;
+  border-color: black;
+}
+
+.categories ul {
+  list-style: none;
+}
+
+.categories a {
+  font-family: "Turret Road", serif;
+  font-size: 16px;
+  color: var(--blue);
+}
+
+.categories a:hover {
+  border-style: solid;
+  border-color: white;
+}
+
+.categorytoggle {
+  display: none;
+}
+
+.categorytoggle {
+  left: 30px;
+  top: 55px;
+}
+
+.categorytoggle:checked + .categories {
+  left: -100%;
+}
+
+.mainmerch {
+  display: grid;
+  display: flex;
+  grid-row-start: 2;
+  grid-row-end: -3;
+  grid-column-start: -3;
+  grid-column-end: 2;
+  flex-direction: column;
+}
+
+.item {
+  border-style: solid;
+  margin: 30px;
+}
+.item h1 {
+  font-family: "Turret Road", serif;
+}
+
+.item p {
+  font-family: "Adamina", serif;
+}
+
+.item button {
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  background-color: var(--grey);
+}
+.description p {
+  margin: 15px;
+}
+.profile {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  border-style: solid;
+}
+
+.profile h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.Forest {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+}
+
+.Marcus {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+}
+
+.Amy {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+}
+
+.Victoria {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+}
+
+.innerslothprofile {
+  display: flex;
+  width: 500px;
+}
+
+.mainabout p {
+  font-family: "Adamina", serif;
+  font-size: 16px;
+}
+
+.mainabout h1 {
+  font-family: "Turret Road", serif;
+  font-size: 30px;
+}
+
+.mainabout {
+  display: grid;
+  grid-row-start: 2;
+  grid-row-end: -3;
+  grid-column-start: -3;
+  grid-column-end: 2;
+}
+
+.profrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 50px;
+}
+
+.socials img {
+  width: 50px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+}
+
+.download {
+  display: flex;
+  flex-direction: row;
+}
+
+.download a,
+.download img {
+  width: 50px;
+}
